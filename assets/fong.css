@@ -1,0 +1,197 @@
+section.topsection{
+	background-image: url('Images/background.jpg');
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.top{
+	width: 40%;
+	float: right;
+	color: #fff;
+}
+
+.top h1{
+	font-weight: 800;
+    padding: 15%;
+    font-size: 3em;
+}
+
+.col-md-3{
+	display: inline-block;
+	text-align: center;
+}
+
+.news .col-lg-3{
+	padding: 0px !Important;
+}
+
+.news{
+	min-height: 70vh;
+}
+
+.sports, .politics, .local, .weather{
+	min-height: 90vh;
+	filter: brightness(0.7) grayscale(8);
+	transition: 0.5s;
+}
+
+.sports h1, .politics h1, .local h1, .weather h1 {
+    padding-top: 80vh;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.sports:hover, .politics:hover, .local:hover, .weather:hover{
+	filter: brightness(1) grayscale(0);
+}
+
+.sports, .politics, .local, .weather{
+color: #fff;
+font-size: 2.5em;
+text-align: center;
+}	
+
+.sports{
+	background-image: url('Images/sport.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.politics{
+	background-image: url('Images/politic.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.local{
+	background-image: url('Images/local.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.weather{
+	background-image: url('Images/weather.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.trending{
+	width: 37%;
+	display: inline-block;
+	color: #fff;
+	float: right;
+	padding: 1%;
+}
+
+marquee{
+	width: 70%;
+}
+
+.navbar{
+	background: #d40000;
+	display: inline-block;
+}
+
+nav.menu {
+    display: inline-block;
+    padding: 2.5%;
+    width: 22%;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.menucontainer{
+	width: 50%;
+	display: inline-block;
+}
+
+nav.menu a{
+	color: #fff;
+	text-decoration: none;
+	padding: 3%;
+}
+
+.intro{
+	height: 90vh;
+	background-repeat: repeat;
+	width: 100%;
+	position: relative;
+}
+
+.texture {
+    background-image: url(Images/rough_diagonal.png);
+    width: 100%;
+    filter: brightness(0.1);
+    position: absolute;
+    height: 90vh;
+    background-repeat: repeat;
+    opacity: 0.7;
+}
+
+.introduction h1 {
+    text-align: center;
+    font-size: 10em;
+    letter-spacing: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 6%;
+    color: #ffffffbf;
+}
+
+.introduction{ 
+    position: relative;
+    z-index: 999;
+}
+
+.happening {
+    padding-top: 8%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+	position: relative;
+	z-index: 999;
+}
+
+.full-bg{
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	max-height: 90vh;
+	overflow-y: hidden;
+}
+
+video{
+	width: 100%;
+	height: 100%;
+	max-height: 100vh;
+	object-fit: cover;
+	overflow-y: hidden;
+}
+
+#news a:hover{
+	text-decoration: none;
+}
+
+.allfornow{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), #000);
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 600;
+	padding: 5%;
+}
+
+
+
+@media screen and (max-width: 600px){.menucontainer{
+	width: 100% !Important;
+}
+}
+
+@media screen and (max-width: 600px){.trending{
+	width: 100% !important;
+}
+}
