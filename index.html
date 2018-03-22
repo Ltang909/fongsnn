@@ -17,6 +17,14 @@
 <meta description="Fong, News Network, Toronto">
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="navbar">
 <div class="menucontainer">
 <center>
@@ -66,7 +74,51 @@ See What's Happening<br/>
 </center>
 </div>
 </section>
-<section class="news" id="news">
+
+<section class="section2" id="news">
+<h1>Top Stories</h1>
+<div class="owl-carousel owl-theme">
+
+<div class="item">
+<center><img src="assets/Images/News1.png" style="width: 100%; max-width: 300px;" /></center>
+<p class="p1">REMINDER - TRANSIT NOTICE - LINE 3 TTC:</p>
+
+<p class="p2">TTC reminds customers that there will be no service this weekend on Line 3 - Scarborough RT between Kennedy and McCowan station due to track and infrastructure work. Shuttle buses will operate for the duration of the closure.</p>
+
+<p class="p3">Kennedy, Lawrence East and Scarborough Centre stations will remain open for the sale of fares. Ellesmere, Midland and McCowan stations will be closed.</p>
+</div>
+<div class="item">
+<center><img src="assets/Images/News2.jpg" style="width: 100%; max-width: 300px;" /></center>
+<p class="p1">SHOOTING - NORTH YORK:</p>
+<p class="p2">Toronto Police are investigating after a male teenager was shot several times at a townhouse complex on Rochefort Dr, in the area of Don Mills Rd and Eglinton Ave E in North York. The teenager suffered serious injuries and was taken to hospital via emergency run.</p>
+<p class="p3">No suspect description available at this time. Anyone with information is asked to contact Toronto Police 54 Division at 416-808-5400.</p>
+</div>
+<div class="item">
+<center><img src="assets/Images/News3.jpg" style="width: 100%; max-width: 300px;" /></center>
+
+<p class="p1">SHOOTING - SCARBOROUGH</p>
+<p class="p2">Toronto Police are investigating after a male was grazed by three bullets following a shooting that took place at around 9:30pm yesterday in the area of Victoria Park Ave and Finch Ave E in Scarborough.
+</p>
+<p class="p3">Police responded to calls for a shooting at that time and located shell casings but no victim. The victim later appeared in hospital saying he was grazed by bullets. His injuries were not life-threatening.
+</p>
+</div>
+<div class="item">
+<center><img src="assets/Images/News4.png" style="width: 100%; max-width: 300px;" /></center>
+<p class="p1">POLICE SEARCHING FOR PERSONS WITH A GUN - SCARBOROUGH:</p>
+<p class="p2">Toronto Police are searching for three male suspects, one which was seen with a rifle, in the area of Corporate Dr and Lee Centre Dr (major intersection of McCowan Rd and Highway 401) in Scarborough.</p>
+<p class="p3">Police say the males were wearing masks and fleeing the scene on foot. No injuries reported.
+
+Anyone with information is asked to contact Toronto Police 42 Division at 416-808-4200.</p>
+</div>
+
+</div>
+</section>
+
+<section class="fb">
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/pg/fongnewsnetwork" data-tabs="timeline" data-width="350" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=1583&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Ffongnewsnetwork&amp;locale=en_GB&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=350"><span style="vertical-align: top;width: 350px;height: 500px;overflow: hidden;"><iframe name="f366eabd3a45664" width="350px" height="500px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FMs1VZf1Vg1J.js%3Fversion%3D42%23cb%3Df379de0c5f5389c%26domain%3D%26origin%3Dfile%253A%252F%252F%252Ffcf4006ebaa014%26relation%3Dparent.parent&amp;container_width=1583&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Ffongnewsnetwork&amp;locale=en_GB&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=350" style="border: none;visibility: visible;width: 350px;height: 500px;"></iframe></span></div>
+</section>
+
+<section class="news">
 <div class="container-fluid">
 <div class="row">
 <div class="col-sm-12 col-lg-3 col-md-offset-0">
@@ -137,4 +189,26 @@ $(document).ready(function(){
     }
   });
 });
+</script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+	autoplay: true,
+	autoplayTimeout:5000,
+	autoplayHoverPause:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 </script>
