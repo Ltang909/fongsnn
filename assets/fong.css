@@ -59,19 +59,19 @@ text-align: center;
 }
 
 .politics{
-	background-image: url('Images/politic.jpg');
+	background-image: url('Images/Politic.jpg');
 	background-position: center center;
 	background-size: cover;
 }
 
 .local{
-	background-image: url('Images/local.jpg');
+	background-image: url('Images/Local.jpg');
 	background-position: center center;
 	background-size: cover;
 }
 
 .weather{
-	background-image: url('Images/weather.jpg');
+	background-image: url('Images/Weather.jpg');
 	background-position: center center;
 	background-size: cover;
 }
